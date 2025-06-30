@@ -26,5 +26,7 @@ To build it simply(you need raylib):
 It is a temporary solution, will make a makefile for it in future.
 
 $200-$5FF - temporarily is videobuffer that gets put on the screen by raylib.
+
 $100-$1FF - Stack
+
 $600-$FFF - Code section(For now) 
