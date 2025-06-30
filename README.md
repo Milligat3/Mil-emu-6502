@@ -24,3 +24,7 @@ To build it simply(you need raylib):
 > gcc (path to raylib)\src\raylib.rc.data -s -static -O2 -std=c99 -Wall -I(path to raylib)\src -Iexternal -lraylib -lopengl32 -lgdi32 -lwinmm main.c -o emu6502
 
 It is a temporary solution, will make a makefile for it in future.
+
+$200-$5FF - temporarily is videobuffer that gets put on the screen by raylib.
+$100-$1FF - Stack
+$600-$FFF - Code section(For now) 
