@@ -1,5 +1,2 @@
-*.s
-*.asm
-*.a65
 /examples/*.bin
 *.exe

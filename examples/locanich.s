@@ -1,0 +1,22 @@
+LDA #$00
+STA $F0
+LDA #$02
+STA $F1
+LDA #$01
+LDX $F1
+LDY #$00
+
+UP:
+STA ($F0), Y
+INY
+BNE UP
+INC $F1
+
+CLC
+ADC #$01
+
+LDX $F1
+CPX #$06
+BNE UP
+BRK
+

@@ -1,0 +1,28 @@
+
+LDA #$00
+STA $F0
+LDA #$02
+STA $F1
+LDY #$00
+
+LOOP:
+
+LDA $FE
+STA ($F0), Y
+INY
+BEQ Inc_Pg
+JMP LOOP
+
+Inc_Pg:
+LDA $F1
+CLC
+ADC #$01
+CMP #$06
+BEQ Flush
+STA $F1
+JMP LOOP
+
+Flush:
+LDA #$02
+STA $F1
+JMP LOOP
