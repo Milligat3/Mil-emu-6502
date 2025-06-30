@@ -1,5 +1,5 @@
 # Mil-emu-6502
-This is my take on emulating 6502. Does not include assembler - reads only .bin files.
+This is my take on emulating MOS 6502. Does not include assembler - reads only .bin files.
 To compile program for it, you need to use cl65
 Example:
 > cl65 -t none Example.s -o Example.bin --start-addr 0x600
